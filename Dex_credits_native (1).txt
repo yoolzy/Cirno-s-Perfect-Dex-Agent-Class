@@ -50,10 +50,12 @@ end
 local EmbeddedModules = {
 ["Editor"] = function()
 --[[
-    Editor App Module
-    DataStore Editor - GUI fiel ao original (LMG2L)
-    dentro da Window/Resize do Dex
+		DataStore Editor
+			
+	Agency's powerful utility allowing to access and mess with game's DataStore.
+
 ]]
+
 -- Common Locals
 local Main,Lib,Apps,Settings -- Main Containers
 local Explorer, Properties, ScriptViewer, SecretServicePanel, Notebook -- Major Apps
@@ -473,10 +475,11 @@ end
 end,
 ["SecretServicePanel"] = function()
 --[[
-    --Secret Service Panel Remake Module
-    
-    Ported from Serversided to Clientsided.
+	SS Panel App Module
+	
+	Panel Interface.
 ]]
+
 -- Common Locals
 local Main,Lib,Apps,Settings -- Main Containers
 local Explorer, Properties, ScriptViewer, SecretServicePanel, Notebook -- Major Apps
@@ -871,6 +874,7 @@ end,
 --[[
     Explorer App Module
 ]]
+
 -- Common Locals
 local Main,Lib,Apps,Settings -- Main Containers
 local Explorer, Properties, ScriptViewer, ModelViewer, Notebook -- Major Apps
@@ -3397,6 +3401,7 @@ end,
 --[[
     Lib Module
 ]]
+
 -- Common Locals
 local Main,Lib,Apps,Settings -- Main Containers
 local Explorer, Properties, ScriptViewer, Notebook -- Major Apps
@@ -10429,9 +10434,9 @@ return {InitDeps = initDeps, InitAfterMain = initAfterMain, Main = main}
 end,
 ["ModelViewer"] = function()
 --[[
-	Model Viewer App Module
-	
-	A model viewer :3
+    Model Viewer
+
+  a model viewer :3
 ]]
 
 -- Common Locals
@@ -15478,7 +15483,13 @@ Main.Init()
 
 --for i,v in pairs(Main.MissingEnv) do print(i,v) end
 
--- Rspy Plugin
+--[[
+			Dex Honey App Module
+			
+		Module that has the powers of Dex and Honey
+		combined in one app! This is the new standard
+		for Dex users to do a lot of stuff with AI!
+]]
 
 local plugin_src = [[
 local main_ref, lib_ref, apps_ref, settings_ref
